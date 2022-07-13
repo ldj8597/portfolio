@@ -15,14 +15,14 @@
     <link rel="stylesheet" href="style.css">
     <script type="module" src="main.js" defer></script>
 </head>
-<body class="bg-slate-200 text-slate-800">
+<body class="bg-slate-200 text-slate-800 space-y-12">
     <!-- Nav bar -->
     <nav class="flex justify-between">
-        <div class="flex items-center gap-5 border border-black">
+        <div class="flex items-center gap-5">
             <img src="/imgs/favicon.png" class="w-9 h-9">
             <a href="" class="text-xl">Lark</a>
         </div>
-        <ul class="border border-black flex items-center gap-5 text-lg">
+        <ul class="flex items-center gap-5 text-lg">
             <li><a href="">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
@@ -31,7 +31,13 @@
             <li><a href="contact">Contact</a></li>
         </ul>
     </nav>
-
+    <!-- Home -->
+    <section id="home" class="flex flex-col items-center gap-5">
+        <img src="./imgs/profile.jpg" alt="profile picture" class="w-72 h-72 rounded-full">
+        <h1 class="text-5xl text-center font-bold leading-normal">Hello,<br />I'm Lark</h1>
+        <h2 class="text-2xl text-center font-semibold">A Software Engineer currently residing in Seoul, Korea</h2>
+        <button class="text-xl px-3 py-2 border border-black rounded-md">CONTACT ME</button>
+    </section>
     <!-- About -->
     <section id="about"></section>
     <!-- Skills -->
