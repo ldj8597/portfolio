@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .section-title {
+        @apply text-5xl text-center font-bold;
+    }
+
+    .section-subtitle {
+        @apply text-3xl text-center font-semibold;
+    }
+
+    .section-description {
+        @apply text-xl text-center px-32;
+    }
+}

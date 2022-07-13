@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="style.css">
     <script type="module" src="main.js" defer></script>
 </head>
-<body class="bg-slate-200 text-slate-800 space-y-12">
+<body class="bg-slate-200 text-slate-800 space-y-16 px-9 py-5">
     <!-- Nav bar -->
     <nav class="flex justify-between">
         <div class="flex items-center gap-5">
@@ -31,21 +31,63 @@
             <li><a href="contact">Contact</a></li>
         </ul>
     </nav>
+
     <!-- Home -->
     <section id="home" class="flex flex-col items-center gap-5">
-        <img src="./imgs/profile.jpg" alt="profile picture" class="w-72 h-72 rounded-full">
+        <img src="./imgs/profile.jpg" alt="profile picture" class="w-72 h-72 rounded-full outline outline-4 outline-blue-300">
         <h1 class="text-5xl text-center font-bold leading-normal">Hello,<br />I'm Lark</h1>
         <h2 class="text-2xl text-center font-semibold">A Software Engineer currently residing in Seoul, Korea</h2>
         <button class="text-xl px-3 py-2 border border-black rounded-md">CONTACT ME</button>
     </section>
+    
     <!-- About -->
-    <section id="about"></section>
+    <section id="about" class="flex flex-col gap-5">
+        <h2 class="section-title">About me</h2>
+        <p class="section-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae voluptatibus nulla molestias iusto deserunt libero. Totam optio necessitatibus deleniti beatae, cupiditate molestias magnam repudiandae animi dolorum, maxime enim corrupti accusantium dolores ipsum asperiores iste nemo illo adipisci itaque excepturi. Ratione ea consectetur, dignissimos ipsam minima vero quae dicta a ut.</p>
+        <div class="flex justify-between my-12 px-16">
+            <div class="max-w-xs flex flex-col gap-5 items-center">
+                <div class="w-48 h-48 border border-blue-300 flex items-center justify-center rounded-full">
+                    <i class="fa-brands fa-html5 text-8xl text-blue-500"></i>
+                </div>
+                <h3 class="text-3xl font-bold">Front-end</h3>
+                <p class="text-center text-xl">HTML, CS, JavaScript, TypeScript, React, Vue, Web APIs</p>
+            </div>
+            <div class="max-w-xs flex flex-col gap-5 items-center">
+                <div class="w-48 h-48 border border-blue-300 flex items-center justify-center rounded-full">
+                    <i class="fa-solid fa-mobile-button text-8xl text-blue-500"></i>
+                </div>
+                <h3 class="text-3xl font-bold">Mobile</h3>
+                <p class="text-center text-xl">Android, iOS, React Native, Flutter, Java, Swift, Kotlin</p>
+            </div>
+            <div class="max-w-xs flex flex-col gap-5 items-center">
+                <div class="w-48 h-48 border border-blue-300 flex items-center justify-center rounded-full">
+                    <i class="fa-solid fa-server text-8xl text-blue-500"></i>
+                </div>
+                <h3 class="text-3xl font-bold">Back-end</h3>
+                <p class="text-center text-xl">Java, JavaScript, Go, NodejS, Rest APIs, GraphQL</p>
+            </div>
+        </div>
+        <div class="space-y-5">
+            <div class="flex items-center gap-9">
+                <i class="fa-brands fa-google"></i>
+                <p class="text-xl text-slate-500">Currently working at Google as Software Engineer <br />2019 Sept - Until now </p>
+            </div>
+            <div class="flex items-center gap-9">
+                <i class="fa-brands fa-google"></i>
+                <p class="text-xl text-slate-500">Currently working at Google as Software Engineer <br />2019 Sept - Until now </p>
+            </div>
+        </div>
+    </section>
+    
     <!-- Skills -->
     <section id="skills"></section>
+    
     <!-- Work -->
     <section id="work"></section>
+    
     <!-- Testimonials -->
     <section id="testimonials"></section>
+    
     <!-- Contact -->
     <section id="contact"></section>
 
