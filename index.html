@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,9 +15,9 @@
     <link rel="stylesheet" href="style.css">
     <script type="module" src="main.js" defer></script>
 </head>
-<body class="bg-slate-200 text-slate-800 space-y-16 px-9 py-5">
+<body class="bg-slate-200 text-slate-800 space-y-24 px-9 py-5 relative">
     <!-- Nav bar -->
-    <nav class="flex justify-between">
+    <nav class="flex justify-between px-9 py-5 fixed top-0 left-0 right-0 bg-white">
         <div class="flex items-center gap-5">
             <img src="/imgs/favicon.png" class="w-9 h-9">
             <a href="" class="text-xl">Lark</a>
@@ -80,7 +80,87 @@
     </section>
     
     <!-- Skills -->
-    <section id="skills"></section>
+    <section id="skills" class="flex flex-col gap-5 bg-yellow-100 py-24">
+        <h2 class="section-title">Skills</h2>
+        <h3 class="section-subtitle">Skills & Attributes</h3>
+        <p class="section-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque quod quia, est natus quo reprehenderit ducimus aspernatur tempora totam facilis, rem expedita similique esse praesentium?
+        </p>
+        <div class="w-5/6 mx-auto grid grid-cols-5 grid-rows-3 mt-5">
+            <div class="col-span-3 row-span-full bg-slate-800 text-white text-center px-9 py-5 space-y-7">
+                <h4 class="text-lg">Skills</h4>
+                <div class="flex flex-col justify-between gap-9">
+                    <div class="relative">
+                        <div class="flex justify-between">
+                            <p>HTML</p>
+                            <p>99%</p>
+                        </div>
+                        <div class="w-full h-1 bg-slate-400"></div>
+                        <div class="w-[99%] h-1 bg-yellow-500 absolute bottom-0"></div>
+                    </div>
+                    <div class="relative">
+                        <div class="flex justify-between">
+                            <p>CSS</p>
+                            <p>90%</p>
+                        </div>
+                        <div class="w-full h-1 bg-slate-400"></div>
+                        <div class="w-[90%] h-1 bg-yellow-500 absolute bottom-0"></div>
+                    </div>
+                    <div class="relative">
+                        <div class="flex justify-between">
+                            <p>JAVASCRIPT</p>
+                            <p>90%</p>
+                        </div>
+                        <div class="w-full h-1 bg-slate-400"></div>
+                        <div class="w-[90%] h-1 bg-yellow-500 absolute bottom-0"></div>
+                    </div>
+                    <div class="relative">
+                        <div class="flex justify-between">
+                            <p>TYPESCRIPT</p>
+                            <p>80%</p>
+                        </div>
+                        <div class="w-full h-1 bg-slate-400"></div>
+                        <div class="w-4/5 h-1 bg-yellow-500 absolute bottom-0"></div>
+                    </div>
+                    <div class="relative">
+                        <div class="flex justify-between">
+                            <p>REACT</p>
+                            <p>88%</p>
+                        </div>
+                        <div class="w-full h-1 bg-slate-400"></div>
+                        <div class="w-[88%] h-1 bg-yellow-500 absolute bottom-0"></div>
+                    </div>
+                    <div class="relative">
+                        <div class="flex justify-between">
+                            <p>NODEjS</p>
+                            <p>77%</p>
+                        </div>
+                        <div class="w-full h-1 bg-slate-400"></div>
+                        <div class="w-[77%] h-1 bg-yellow-500 absolute bottom-0"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-span-2 row-span-2 bg-gray-500 text-white text-center py-5">
+                <h4 class="text-lg mb-5">Tools</h4>
+                <ul class="space-y-2">
+                    <li>Android development tools</li>
+                    <li>iOS development tools</li>
+                    <li>Sublime Text with Plug-ins</li>
+                    <li>Visual Studio</li>
+                    <li>Team Foundation</li>
+                    <li>Adobe Programs</li>
+                    <li>Sketch app</li>
+                </ul>
+            </div>
+            <div class="col-span-2 bg-gray-400 text-white text-center py-5">
+                <h4 class="text-lg mb-5">Etc</h4>
+                <ul class="space-y-2">
+                    <li>Git</li>
+                    <li>Scrum master</li>
+                    <li>Math</li>
+                </ul>
+            </div>
+        </div>
+    </section>
     
     <!-- Work -->
     <section id="work"></section>
