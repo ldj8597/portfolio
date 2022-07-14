@@ -27,3 +27,8 @@
         @apply bg-red-300 text-white;
     }
 }
+
+.button-active span {
+    opacity: 1;
+    top: 0;
+}
