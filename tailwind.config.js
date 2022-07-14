@@ -8,6 +8,9 @@ module.exports = {
       fontFamily: {
         'sans': ['Open Sans', 'sans-serif'],
       },
+      backgroundImage: {
+        'home': "url('/imgs/homebackground.webp')",
+      },
     },
   },
   plugins: [],

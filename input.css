@@ -16,7 +16,7 @@
     }
 
     .section-description {
-        @apply text-xl text-center px-12;
+        @apply text-base md:text-xl text-center md:px-12;
     }
 
     .nav-active {
