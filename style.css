@@ -744,6 +744,10 @@ video {
   height: 1.75rem;
 }
 
+.h-full {
+  height: 100%;
+}
+
 .w-9 {
   width: 2.25rem;
 }
@@ -1008,6 +1012,11 @@ video {
 .bg-red-200 {
   --tw-bg-opacity: 1;
   background-color: rgb(254 202 202 / var(--tw-bg-opacity));
+}
+
+.bg-yellow-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 249 195 / var(--tw-bg-opacity));
 }
 
 .bg-\[url\(\'\.\/imgs\/home\.webp\'\)\] {
