@@ -15,230 +15,260 @@
     <link rel="stylesheet" href="style.css">
     <script type="module" src="main.js" defer></script>
 </head>
-<body class="text-slate-800 space-y-24 px-9 py-5 relative">
-    <!-- Nav bar -->
-    <nav class="flex justify-between px-9 py-5 fixed top-0 left-0 right-0 bg-white">
-        <div class="flex items-center gap-5">
-            <img src="/imgs/favicon.png" class="w-9 h-9">
-            <a href="" class="text-xl">Lark</a>
-        </div>
-        <ul class="flex items-center gap-5 text-lg">
-            <li><a href="">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#work">My work</a></li>
-            <li><a href="#testimonials">Testimonial</a></li>
-            <li><a href="contact">Contact</a></li>
-        </ul>
-    </nav>
-
-    <!-- Home -->
-    <section id="home" class="flex flex-col items-center gap-5">
-        <img src="./imgs/profile.jpg" alt="profile picture" class="w-72 h-72 rounded-full outline outline-4 outline-blue-300">
-        <h1 class="text-5xl text-center font-bold leading-normal">Hello,<br />I'm Lark</h1>
-        <h2 class="text-2xl text-center font-semibold">A Software Engineer currently residing in Seoul, Korea</h2>
-        <button class="text-xl px-3 py-2 border border-black rounded-md">CONTACT ME</button>
-    </section>
-    
-    <!-- About -->
-    <section id="about" class="flex flex-col gap-5">
-        <h2 class="section-title">About me</h2>
-        <p class="section-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae voluptatibus nulla molestias iusto deserunt libero. Totam optio necessitatibus deleniti beatae, cupiditate molestias magnam repudiandae animi dolorum, maxime enim corrupti accusantium dolores ipsum asperiores iste nemo illo adipisci itaque excepturi. Ratione ea consectetur, dignissimos ipsam minima vero quae dicta a ut.</p>
-        <div class="flex justify-between my-12 px-16">
-            <div class="max-w-xs flex flex-col gap-5 items-center">
-                <div class="w-48 h-48 border border-blue-300 flex items-center justify-center rounded-full">
-                    <i class="fa-brands fa-html5 text-8xl text-blue-500"></i>
+<body>
+    <div class="container mx-auto flex flex-col items-center text-slate-800 space-y-12 px-9 py-5 relative">
+        <!-- Nav bar -->
+        <nav class="w-full fixed top-0 bg-white z-50">
+            <div class="flex items-center justify-between px-9 py-5">
+                <div class="flex items-center gap-5">
+                    <img src="/imgs/favicon.png" class="w-9 h-9">
+                    <a href="" class="text-xl">Lark</a>
                 </div>
-                <h3 class="text-3xl font-bold">Front-end</h3>
-                <p class="text-center text-xl">HTML, CS, JavaScript, TypeScript, React, Vue, Web APIs</p>
-            </div>
-            <div class="max-w-xs flex flex-col gap-5 items-center">
-                <div class="w-48 h-48 border border-blue-300 flex items-center justify-center rounded-full">
-                    <i class="fa-solid fa-mobile-button text-8xl text-blue-500"></i>
-                </div>
-                <h3 class="text-3xl font-bold">Mobile</h3>
-                <p class="text-center text-xl">Android, iOS, React Native, Flutter, Java, Swift, Kotlin</p>
-            </div>
-            <div class="max-w-xs flex flex-col gap-5 items-center">
-                <div class="w-48 h-48 border border-blue-300 flex items-center justify-center rounded-full">
-                    <i class="fa-solid fa-server text-8xl text-blue-500"></i>
-                </div>
-                <h3 class="text-3xl font-bold">Back-end</h3>
-                <p class="text-center text-xl">Java, JavaScript, Go, NodejS, Rest APIs, GraphQL</p>
-            </div>
-        </div>
-        <div class="space-y-5">
-            <div class="flex items-center gap-9">
-                <i class="fa-brands fa-google"></i>
-                <p class="text-xl text-slate-500">Currently working at Google as Software Engineer <br />2019 Sept - Until now </p>
-            </div>
-            <div class="flex items-center gap-9">
-                <i class="fa-brands fa-google"></i>
-                <p class="text-xl text-slate-500">Currently working at Google as Software Engineer <br />2019 Sept - Until now </p>
-            </div>
-        </div>
-    </section>
-    
-    <!-- Skills -->
-    <section id="skills" class="flex flex-col gap-5 bg-yellow-100 py-24">
-        <h2 class="section-title">Skills</h2>
-        <h3 class="section-subtitle">Skills & Attributes</h3>
-        <p class="section-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque quod quia, est natus quo reprehenderit ducimus aspernatur tempora totam facilis, rem expedita similique esse praesentium?
-        </p>
-        <div class="w-5/6 mx-auto grid grid-cols-5 grid-rows-3 mt-5">
-            <div class="col-span-3 row-span-full bg-slate-800 text-white text-center px-9 py-5 space-y-7">
-                <h4 class="text-lg">Skills</h4>
-                <div class="flex flex-col justify-between gap-9">
-                    <div class="relative">
-                        <div class="flex justify-between">
-                            <p>HTML</p>
-                            <p>99%</p>
-                        </div>
-                        <div class="w-full h-1 bg-slate-400"></div>
-                        <div class="w-[99%] h-1 bg-yellow-500 absolute bottom-0"></div>
-                    </div>
-                    <div class="relative">
-                        <div class="flex justify-between">
-                            <p>CSS</p>
-                            <p>90%</p>
-                        </div>
-                        <div class="w-full h-1 bg-slate-400"></div>
-                        <div class="w-[90%] h-1 bg-yellow-500 absolute bottom-0"></div>
-                    </div>
-                    <div class="relative">
-                        <div class="flex justify-between">
-                            <p>JAVASCRIPT</p>
-                            <p>90%</p>
-                        </div>
-                        <div class="w-full h-1 bg-slate-400"></div>
-                        <div class="w-[90%] h-1 bg-yellow-500 absolute bottom-0"></div>
-                    </div>
-                    <div class="relative">
-                        <div class="flex justify-between">
-                            <p>TYPESCRIPT</p>
-                            <p>80%</p>
-                        </div>
-                        <div class="w-full h-1 bg-slate-400"></div>
-                        <div class="w-4/5 h-1 bg-yellow-500 absolute bottom-0"></div>
-                    </div>
-                    <div class="relative">
-                        <div class="flex justify-between">
-                            <p>REACT</p>
-                            <p>88%</p>
-                        </div>
-                        <div class="w-full h-1 bg-slate-400"></div>
-                        <div class="w-[88%] h-1 bg-yellow-500 absolute bottom-0"></div>
-                    </div>
-                    <div class="relative">
-                        <div class="flex justify-between">
-                            <p>NODEjS</p>
-                            <p>77%</p>
-                        </div>
-                        <div class="w-full h-1 bg-slate-400"></div>
-                        <div class="w-[77%] h-1 bg-yellow-500 absolute bottom-0"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-span-2 row-span-2 bg-gray-500 text-white text-center py-5">
-                <h4 class="text-lg mb-5">Tools</h4>
-                <ul class="space-y-2">
-                    <li>Android development tools</li>
-                    <li>iOS development tools</li>
-                    <li>Sublime Text with Plug-ins</li>
-                    <li>Visual Studio</li>
-                    <li>Team Foundation</li>
-                    <li>Adobe Programs</li>
-                    <li>Sketch app</li>
+                <ul class="hidden md:flex items-center gap-5 text-lg">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#work">My work</a></li>
+                    <li><a href="#testimonials">Testimonial</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
+                <i class="hamburger fa-solid fa-bars text-xl md:hidden cursor-pointer"></i>
             </div>
-            <div class="col-span-2 bg-gray-400 text-white text-center py-5">
-                <h4 class="text-lg mb-5">Etc</h4>
-                <ul class="space-y-2">
-                    <li>Git</li>
-                    <li>Scrum master</li>
-                    <li>Math</li>
-                </ul>
-            </div>
-        </div>
-    </section>
+            <!-- mobild menu -->
+            <ul class="mobile-menu hidden md:hidden bg-slate-700 text-white text-lg text-center">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#work">My work</a></li>
+                <li><a href="#testimonials">Testimonial</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     
-    <!-- Work -->
-    <section id="work" class="flex flex-col items-center gap-5">
-        <h2 class="section-title">My work</h2>
-        <p class="section-description">Projects</p>
-        <ul class="flex flex-row mx-auto my-1.5">
-            <li class="px-12 py-3 border border-gray-300 rounded-lg"><button>All <span class="category-count bg-yellow-300 w-7 h-7 rounded-full inline-flex items-center justify-center">8</span></button></li>
-            <li class="px-12 py-3 border border-gray-300 rounded-lg"><button>Front-end <span class="category-count">3</span></button></li>
-            <li class="px-12 py-3 border border-gray-300 rounded-lg"><button>Back-end <span class="category-count">3</span></button></li>
-            <li class="px-12 py-3 border border-gray-300 rounded-lg"><button>Mobile <span class="category-count">2</span></button></li>
-        </ul>
-        <div class="grid grid-cols-4 grid-rows-2 gap-1 w-11/12">
-            <a href="" target="_blank" class="bg-gray-300 relative group flex items-center justify-center">
-                <img src="./imgs/projects/project1.png" alt="">
-                <div class="bg-slate-600/50 text-white absolute w-full top-7 text-center invisible group-hover:visible">description</div>
-            </a>
-            <a href="" target="_blank" class="bg-gray-300 relative group flex items-center justify-center">
-                <img src="./imgs/projects/project2.png" alt="">
-                <div class="bg-slate-600/50 text-white absolute w-full top-7 text-center invisible group-hover:visible">description</div>
-            </a>
-            <a href="" target="_blank" class="bg-gray-300 relative group flex items-center justify-center">
-                <img src="./imgs/projects/project3.png" alt="">
-                <div class="bg-slate-600/50 text-white absolute w-full top-7 text-center invisible group-hover:visible">description</div>
-            </a>
-            <a href="" target="_blank" class="bg-gray-300 relative group flex items-center justify-center">
-                <img src="./imgs/projects/project4.png" alt="">
-                <div class="bg-slate-600/50 text-white absolute w-full top-7 text-center invisible group-hover:visible">description</div>
-            </a>
-            <a href="" target="_blank" class="bg-gray-300 relative group flex items-center justify-center">
-                <img src="./imgs/projects/project5.png" alt="">
-                <div class="bg-slate-600/50 text-white absolute w-full top-7 text-center invisible group-hover:visible">description</div>
-            </a>
-            <a href="" target="_blank" class="bg-gray-300 relative group flex items-center justify-center">
-                <img src="./imgs/projects/project6.png" alt="">
-                <div class="bg-slate-600/50 text-white absolute w-full top-7 text-center invisible group-hover:visible">description</div>
-            </a>
-            <a href="" target="_blank" class="bg-gray-300 relative group flex items-center justify-center">
-                <img src="./imgs/projects/project7.png" alt="">
-                <div class="bg-slate-600/50 text-white absolute w-full top-7 text-center invisible group-hover:visible">description</div>
-            </a>
-            <a href="" target="_blank" class="bg-gray-300 relative group flex items-center justify-center">
-                <img src="./imgs/projects/project8.png" alt="">
-                <div class="bg-slate-600/50 text-white absolute w-full top-7 text-center invisible group-hover:visible">description</div>
-            </a>
-        </div>
-
-    </section>
-    
-    <!-- Testimonials -->
-    <section id="testimonials" class="flex flex-col items-center gap-5 bg-gray-300 pt-24 pb-12 px-10">
-        <h2 class="section-title">Testimonials</h2>
-        <p class="section-description">See what they say about me</p>
-        <div class="flex flex-row items-center gap-10">
-            <img src="./imgs/people.webp" alt="" class="rounded-full w-44">
-            <div class="bg-white rounded-md text-center text-lg px-9 py-7 space-y-3">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis voluptatum maiores doloremque, odit sed id rerum consectetur labore dolor quos tempora, aliquam similique cupiditate suscipit deserunt vel nemo et magnam?</p>
-                <a href=""><span class="text-red-500">Ellie</span> / TigerSpike</a>
+        <!-- Home -->
+        <section id="home" class="section">
+            <img src="./imgs/profile.jpg" alt="profile picture" class="w-72 h-72 rounded-full outline outline-4 outline-blue-300">
+            <h1 class="text-5xl text-center font-bold leading-normal">Hello,<br />I'm Lark</h1>
+            <h2 class="text-2xl text-center font-semibold">A Software Engineer currently residing in Seoul, Korea</h2>
+            <button class="text-xl px-3 py-2 border border-black rounded-md">CONTACT ME</button>
+        </section>
+        
+        <!-- About -->
+        <section id="about" class="section">
+            <h2 class="section-title">About me</h2>
+            <p class="section-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae voluptatibus nulla molestias iusto deserunt libero. Totam optio necessitatibus deleniti beatae, cupiditate molestias magnam repudiandae animi dolorum, maxime enim corrupti accusantium dolores ipsum asperiores iste nemo illo adipisci itaque excepturi. Ratione ea consectetur, dignissimos ipsam minima vero quae dicta a ut.</p>
+            <div class="flex flex-col md:flex-row gap-16 items-center justify-between my-12 px-3">
+                <div class="max-w-xs flex flex-col gap-5 items-center">
+                    <div class="w-48 h-48 border border-blue-300 flex items-center justify-center rounded-full">
+                        <i class="fa-brands fa-html5 text-8xl text-blue-500"></i>
+                    </div>
+                    <h3 class="text-3xl font-bold">Front-end</h3>
+                    <p class="text-center text-xl">HTML, CS, JavaScript, TypeScript, React, Vue, Web APIs</p>
+                </div>
+                <div class="max-w-xs flex flex-col gap-5 items-center">
+                    <div class="w-48 h-48 border border-blue-300 flex items-center justify-center rounded-full">
+                        <i class="fa-solid fa-mobile-button text-8xl text-blue-500"></i>
+                    </div>
+                    <h3 class="text-3xl font-bold">Mobile</h3>
+                    <p class="text-center text-xl">Android, iOS, React Native, Flutter, Java, Swift, Kotlin</p>
+                </div>
+                <div class="max-w-xs flex flex-col gap-5 items-center">
+                    <div class="w-48 h-48 border border-blue-300 flex items-center justify-center rounded-full">
+                        <i class="fa-solid fa-server text-8xl text-blue-500"></i>
+                    </div>
+                    <h3 class="text-3xl font-bold">Back-end</h3>
+                    <p class="text-center text-xl">Java, JavaScript, Go, NodejS, Rest APIs, GraphQL</p>
+                </div>
             </div>
-        </div>
-        <div class="flex flex-row-reverse items-center gap-10">
-            <img src="./imgs/people.webp" alt="" class="rounded-full w-44">
-            <div class="bg-white rounded-md text-center text-lg px-9 py-7 space-y-3">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis voluptatum maiores doloremque, odit sed id rerum consectetur labore dolor quos tempora, aliquam similique cupiditate suscipit deserunt vel nemo et magnam?</p>
-                <a href=""><span class="text-red-500">Ellie</span> / TigerSpike</a>
+            <div class="space-y-5 self-start">
+                <div class="flex items-center gap-9">
+                    <i class="fa-brands fa-google"></i>
+                    <p class="text-xl text-slate-500">Currently working at Google as Software Engineer <br />2019 Sept - Until now </p>
+                </div>
+                <div class="flex items-center gap-9">
+                    <i class="fa-brands fa-google"></i>
+                    <p class="text-xl text-slate-500">Currently working at Google as Software Engineer <br />2019 Sept - Until now </p>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+        
+        <!-- Skills -->
+        <section id="skills" class="section bg-yellow-100">
+            <h2 class="section-title">Skills</h2>
+            <h3 class="section-subtitle">Skills & Attributes</h3>
+            <p class="section-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque quod quia, est natus quo reprehenderit ducimus aspernatur tempora totam facilis, rem expedita similique esse praesentium?
+            </p>
+            <div class="w-11/12 mx-auto grid grid-cols-5 grid-rows-3 mt-5">
+                <div class="col-span-5 md:col-span-3 md:row-span-full bg-slate-800 text-white text-center px-9 py-5 space-y-7">
+                    <h4 class="text-lg">Skills</h4>
+                    <div class="flex flex-col justify-between gap-9">
+                        <div class="relative">
+                            <div class="flex justify-between">
+                                <p>HTML</p>
+                                <p>99%</p>
+                            </div>
+                            <div class="w-full h-1 bg-slate-400"></div>
+                            <div class="w-[99%] h-1 bg-yellow-500 absolute bottom-0 z-10"></div>
+                        </div>
+                        <div class="relative">
+                            <div class="flex justify-between">
+                                <p>CSS</p>
+                                <p>90%</p>
+                            </div>
+                            <div class="w-full h-1 bg-slate-400"></div>
+                            <div class="w-[90%] h-1 bg-yellow-500 absolute bottom-0 z-10"></div>
+                        </div>
+                        <div class="relative">
+                            <div class="flex justify-between">
+                                <p>JAVASCRIPT</p>
+                                <p>90%</p>
+                            </div>
+                            <div class="w-full h-1 bg-slate-400"></div>
+                            <div class="w-[90%] h-1 bg-yellow-500 absolute bottom-0 z-10"></div>
+                        </div>
+                        <div class="relative">
+                            <div class="flex justify-between">
+                                <p>TYPESCRIPT</p>
+                                <p>80%</p>
+                            </div>
+                            <div class="w-full h-1 bg-slate-400"></div>
+                            <div class="w-4/5 h-1 bg-yellow-500 absolute bottom-0 z-10"></div>
+                        </div>
+                        <div class="relative">
+                            <div class="flex justify-between">
+                                <p>REACT</p>
+                                <p>88%</p>
+                            </div>
+                            <div class="w-full h-1 bg-slate-400"></div>
+                            <div class="w-[88%] h-1 bg-yellow-500 absolute bottom-0 z-10"></div>
+                        </div>
+                        <div class="relative">
+                            <div class="flex justify-between">
+                                <p>NODEjS</p>
+                                <p>77%</p>
+                            </div>
+                            <div class="w-full h-1 bg-slate-400"></div>
+                            <div class="w-[77%] h-1 bg-yellow-500 absolute bottom-0 z-10"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-span-5 md:col-span-2 md:row-span-2 bg-gray-500 text-white text-center py-5 flex flex-col items-center justify-center">
+                    <h4 class="text-lg mb-5">Tools</h4>
+                    <ul class="space-y-2">
+                        <li>Android development tools</li>
+                        <li>iOS development tools</li>
+                        <li>Sublime Text with Plug-ins</li>
+                        <li>Visual Studio</li>
+                        <li>Team Foundation</li>
+                        <li>Adobe Programs</li>
+                        <li>Sketch app</li>
+                    </ul>
+                </div>
+                <div class="col-span-5 md:col-span-2 bg-gray-400 text-white text-center py-5 flex flex-col items-center justify-center">
+                    <h4 class="text-lg mb-5">Etc</h4>
+                    <ul class="space-y-2">
+                        <li>Git</li>
+                        <li>Scrum master</li>
+                        <li>Math</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Work -->
+        <section id="work" class="section">
+            <h2 class="section-title">My work</h2>
+            <p class="section-description">Projects</p>
+            <ul class="projects-nav flex flex-col md:flex-row px-1">
+                <li class="border border-gray-300 rounded-lg">
+                    <button class="all button-active w-full h-full rounded-lg px-10 py-3" data-category="all">
+                        All <span class="category-count bg-yellow-300 w-7 h-7 rounded-full inline-flex items-center justify-center">8</span>
+                    </button>
+                </li>
+                <li class="border border-gray-300 rounded-lg">
+                    <button class="front-end px-10 py-3 w-full h-full rounded-lg" data-category="frontend">
+                        Front-end <span class="category-count bg-yellow-300 w-7 h-7 rounded-full inline-flex items-center justify-center">3</span>
+                    </button>
+                </li>
+                <li class="border border-gray-300 rounded-lg">
+                    <button class="back-end px-10 py-3 w-full h-full rounded-lg" data-category="backend">
+                        Back-end <span class="category-count bg-yellow-300 w-7 h-7 rounded-full inline-flex items-center justify-center">3</span>
+                    </button>
+                </li>
+                <li class="border border-gray-300 rounded-lg">
+                    <button class="mobile px-10 py-3 w-full h-full rounded-lg" data-category="mobile">
+                        Mobile <span class="category-count bg-yellow-300 w-7 h-7 rounded-full inline-flex items-center justify-center">2</span>
+                    </button>
+                </li>
+            </ul>
+            <div class="projects grid grid-cols-1 md:grid-cols-4 md:grid-rows-2 gap-1 w-11/12">
+                <a href="" target="_blank" class="frontend bg-gray-300 relative group flex items-center justify-center">
+                    <img src="./imgs/projects/project1.png" alt="">
+                    <div class="bg-slate-600/50 text-white absolute w-full top-7 text-center invisible group-hover:visible">description</div>
+                </a>
+                <a href="" target="_blank" class=" frontend bg-gray-300 relative group flex items-center justify-center">
+                    <img src="./imgs/projects/project2.png" alt="">
+                    <div class="bg-slate-600/50 text-white absolute w-full top-7 text-center invisible group-hover:visible">description</div>
+                </a>
+                <a href="" target="_blank" class="frontend bg-gray-300 relative group flex items-center justify-center">
+                    <img src="./imgs/projects/project3.png" alt="">
+                    <div class="bg-slate-600/50 text-white absolute w-full top-7 text-center invisible group-hover:visible">description</div>
+                </a>
+                <a href="" target="_blank" class="backend bg-gray-300 relative group flex items-center justify-center">
+                    <img src="./imgs/projects/project4.png" alt="">
+                    <div class="bg-slate-600/50 text-white absolute w-full top-7 text-center invisible group-hover:visible">description</div>
+                </a>
+                <a href="" target="_blank" class="backend bg-gray-300 relative group flex items-center justify-center">
+                    <img src="./imgs/projects/project5.png" alt="">
+                    <div class="bg-slate-600/50 text-white absolute w-full top-7 text-center invisible group-hover:visible">description</div>
+                </a>
+                <a href="" target="_blank" class="backend bg-gray-300 relative group flex items-center justify-center">
+                    <img src="./imgs/projects/project6.png" alt="">
+                    <div class="bg-slate-600/50 text-white absolute w-full top-7 text-center invisible group-hover:visible">description</div>
+                </a>
+                <a href="" target="_blank" class="mobile bg-gray-300 relative group flex items-center justify-center">
+                    <img src="./imgs/projects/project7.png" alt="">
+                    <div class="bg-slate-600/50 text-white absolute w-full top-7 text-center invisible group-hover:visible">description</div>
+                </a>
+                <a href="" target="_blank" class="mobile bg-gray-300 relative group flex items-center justify-center">
+                    <img src="./imgs/projects/project8.png" alt="">
+                    <div class="bg-slate-600/50 text-white absolute w-full top-7 text-center invisible group-hover:visible">description</div>
+                </a>
+            </div>
     
-    <!-- Contact -->
-    <section id="contact" class="flex flex-col items-center gap-5 bg-red-300 text-white pt-24 pb-12">
-        <h2 class="section-title">Let's talk</h2>
-        <h3 class="text-3xl">lark@gmail.com</h3>
-        <div class="text-5xl">
-            <a href=""><i class="fa-brands fa-github"></i></a>
-            <a href=""><i class="fa-brands fa-linkedin"></i></a>
-        </div>
-        <p class="text-2xl text-slate-200">2022 Lark Ascending - All rights reserved</p>
-    </section>
+        </section>
+        
+        <!-- Testimonials -->
+        <section id="testimonials" class="section bg-gray-300 ">
+            <h2 class="section-title">Testimonials</h2>
+            <p class="section-description">See what they say about me</p>
+            <div class="flex flex-col md:flex-row items-center gap-10">
+                <img src="./imgs/people.webp" alt="" class="rounded-full w-44">
+                <div class="bg-white rounded-md text-center text-lg px-9 py-7 space-y-3">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis voluptatum maiores doloremque, odit sed id rerum consectetur labore dolor quos tempora, aliquam similique cupiditate suscipit deserunt vel nemo et magnam?</p>
+                    <a href=""><span class="text-red-500">Ellie</span> / TigerSpike</a>
+                </div>
+            </div>
+            <div class="flex flex-col md:flex-row-reverse items-center gap-10">
+                <img src="./imgs/people.webp" alt="" class="rounded-full w-44">
+                <div class="bg-white rounded-md text-center text-lg px-9 py-7 space-y-3">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis voluptatum maiores doloremque, odit sed id rerum consectetur labore dolor quos tempora, aliquam similique cupiditate suscipit deserunt vel nemo et magnam?</p>
+                    <a href=""><span class="text-red-500">Ellie</span> / TigerSpike</a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Contact -->
+        <section id="contact" class="section bg-red-300 text-white">
+            <h2 class="section-title">Let's talk</h2>
+            <h3 class="text-3xl">lark@gmail.com</h3>
+            <div class="text-5xl">
+                <a href=""><i class="fa-brands fa-github"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <p class="text-2xl text-slate-200">2022 Lark Ascending - All rights reserved</p>
+        </section>
+    </div>
 
 </body>
 </html>

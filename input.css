@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 @layer components {
+    .section {
+        @apply w-full flex flex-col items-center gap-5 pt-24 pb-12 px-10;
+    }
+
     .section-title {
         @apply text-5xl text-center font-bold;
     }
@@ -12,6 +16,10 @@
     }
 
     .section-description {
-        @apply text-xl text-center px-32;
+        @apply text-xl text-center px-12;
+    }
+
+    .button-active {
+        @apply bg-red-300 text-white;
     }
 }
