@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="style.css">
     <script type="module" src="main.js" defer></script>
 </head>
-<body class="bg-slate-200 text-slate-800 space-y-24 px-9 py-5 relative">
+<body class="text-slate-800 space-y-24 px-9 py-5 relative">
     <!-- Nav bar -->
     <nav class="flex justify-between px-9 py-5 fixed top-0 left-0 right-0 bg-white">
         <div class="flex items-center gap-5">
@@ -210,7 +210,24 @@
     </section>
     
     <!-- Testimonials -->
-    <section id="testimonials"></section>
+    <section id="testimonials" class="flex flex-col items-center gap-5 bg-gray-300 py-24 px-10">
+        <h2 class="section-title">Testimonials</h2>
+        <p class="section-description">See what they say about me</p>
+        <div class="flex flex-row items-center gap-10">
+            <img src="./imgs/people.webp" alt="" class="rounded-full w-44">
+            <div class="bg-white rounded-md text-center text-lg px-9 py-7 space-y-3">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis voluptatum maiores doloremque, odit sed id rerum consectetur labore dolor quos tempora, aliquam similique cupiditate suscipit deserunt vel nemo et magnam?</p>
+                <a href=""><span class="text-red-500">Ellie</span> / TigerSpike</a>
+            </div>
+        </div>
+        <div class="flex flex-row-reverse items-center gap-10">
+            <img src="./imgs/people.webp" alt="" class="rounded-full w-44">
+            <div class="bg-white rounded-md text-center text-lg px-9 py-7 space-y-3">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis voluptatum maiores doloremque, odit sed id rerum consectetur labore dolor quos tempora, aliquam similique cupiditate suscipit deserunt vel nemo et magnam?</p>
+                <a href=""><span class="text-red-500">Ellie</span> / TigerSpike</a>
+            </div>
+        </div>
+    </section>
     
     <!-- Contact -->
     <section id="contact"></section>
