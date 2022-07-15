@@ -1,8 +1,10 @@
 // Toggle mobile menu
 const hamburger = document.querySelector('.hamburger');
-const nav = document.querySelector('nav ul');
 hamburger.addEventListener('click', () => {
+    const nav = document.querySelector('nav ul');
+
     nav.classList.toggle('hidden');
+    nav.classList.toggle('bg-red-300');
 })
 
 // Make Nav bar transparent & highligted on scroll
