@@ -50,6 +50,27 @@ window.addEventListener('scroll', () => {
     }
 });
 
+// Arrow up button
+const arrowup = document.querySelector('#arrow-up');
+
+arrowup.addEventListener('click', () => {
+    home.scrollIntoView();
+})
+
+window.addEventListener('scroll', () => {
+    if (window.scrollY > home.offsetHeight / 2) {
+        arrowup.classList.remove('opacity-0')
+        arrowup.classList.add('opacity-100')
+        arrowup.classList.remove('pointer-events-none')
+        arrowup.classList.add('pointer-events-auto')
+    } else {
+        arrowup.classList.remove('opacity-100');
+        arrowup.classList.add('opacity-0');
+        arrowup.classList.remove('pointer-events-auto')
+        arrowup.classList.add('pointer-events-none')
+    }
+});
+
 // Projects
 const projectButtons = document.querySelectorAll('.projects-nav button');
 const projects = document.querySelectorAll('.projects a');
