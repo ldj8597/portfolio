@@ -6,9 +6,11 @@ hamburger.addEventListener('click', () => {
 })
 
 // Make Nav bar transparent & highligted on scroll
+// Make home section transparent on scroll
 const navbar = document.querySelector('nav');
 const sections = document.querySelectorAll('section');
 const navlinks = document.querySelectorAll('nav ul li');
+const home = document.querySelector('#home');
 
 window.addEventListener('scroll', () => {
     // Make nav bar transparent or opaque
@@ -35,15 +37,18 @@ window.addEventListener('scroll', () => {
         const sectionBottom = sectionTop + section.offsetHeight;
         const sectionId = section.getAttribute('id');
         const menu = document.querySelector(`nav ul li.${sectionId}`);
-        console.log(menu);
         if (window.scrollY > sectionTop && scrollY < sectionBottom) {
             menu.classList.add('nav-active')
         } else {
             menu.classList.remove('nav-active');
         }
     });
-});
 
+    // Make home section transparent on scroll
+    if (window.scrollY > home.offsetTop && window.scrollY < (home.offsetTop + home.offsetHeight)) {
+        document.querySelector('#home > div').style.opacity = 1 - window.scrollY / home.offsetHeight;
+    }
+});
 
 // Projects
 const projectButtons = document.querySelectorAll('.projects-nav button');

@@ -27,12 +27,12 @@
                     </a>
                 </div>
                 <ul class="hidden text-center text-lg md:flex flex-row gap-3">
-                    <li class="home nav-active px-2 py-1 rounded-md hover:bg-lime-300"><a href="#home">Home</a></li>
-                    <li class="about px-2 py-1 rounded-md hover:bg-lime-200"><a href="#about">About</a></li>
-                    <li class="skills px-2 py-1 rounded-md hover:bg-lime-200" ><a href="#skills">Skills</a></li>
-                    <li class="work px-2 py-1 rounded-md hover:bg-lime-200"><a href="#work">My work</a></li>
-                    <li class="testimonials px-2 py-1 rounded-md hover:bg-lime-200" data-s><a href="#testimonials">Testimonial</a></li>
-                    <li class="contact px-2 py-1 rounded-md hover:bg-lime-200" "><a href="#contact">Contact</a></li>
+                    <li class="home nav-active px-2 py-1 rounded-md hover:bg-red-400"><a href="#home">Home</a></li>
+                    <li class="about px-2 py-1 rounded-md hover:bg-red-400"><a href="#about">About</a></li>
+                    <li class="skills px-2 py-1 rounded-md hover:bg-red-400" ><a href="#skills">Skills</a></li>
+                    <li class="work px-2 py-1 rounded-md hover:bg-red-400"><a href="#work">My work</a></li>
+                    <li class="testimonials px-2 py-1 rounded-md hover:bg-red-400" data-s><a href="#testimonials">Testimonial</a></li>
+                    <li class="contact px-2 py-1 rounded-md hover:bg-red-400" "><a href="#contact">Contact</a></li>
                 </ul>
                 <i class="hamburger fa-solid fa-bars text-xl absolute right-12 top-10 md:hidden cursor-pointer hover:scale-110 transition-transform duration-300"></i>
             <!-- </div> -->
@@ -49,10 +49,12 @@
     
         <!-- Home -->
         <section id="home" class="section text-white bg-[url('./imgs/home.webp')] bg-no-repeat bg-center bg-cover">
-            <img src="./imgs/profile.jpg" alt="profile picture" class="w-72 h-72 rounded-full outline outline-4 outline-white">
-            <h1 class="text-5xl text-center font-bold leading-normal">Hello,<br />I'm Lark</h1>
-            <h2 class="text-2xl text-center font-semibold">A Software Engineer currently residing in Seoul, Korea</h2>
-            <button class="text-xl px-3 py-2 border-2 rounded-md">CONTACT ME</button>
+            <div class="w-full flex flex-col items-center gap-10">
+                <img src="./imgs/profile.jpg" alt="profile picture" class="w-72 h-72 rounded-full outline outline-4 outline-white">
+                <h1 class="text-5xl text-center font-bold leading-normal">Hello,<br />I'm Lark</h1>
+                <h2 class="text-2xl text-center font-semibold">A Software Engineer currently residing in Seoul, Korea</h2>
+                <a href="#contact" class="text-xl px-3 py-2 border-2 rounded-md hover:font-bold hover:border-3">CONTACT ME</a>
+            </div>
         </section>
         
         <!-- About -->
