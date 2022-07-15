@@ -20,7 +20,7 @@
     }
 
     .nav-active {
-        @apply border border-blue-300
+        @apply border border-white
     }
 
     .button-active {
