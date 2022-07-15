@@ -4,7 +4,7 @@
 
 @layer components {
     .section {
-        @apply w-full flex flex-col items-center gap-10 pt-24 pb-12 px-10 rounded-md shadow-md;
+        @apply w-full flex flex-col items-center gap-10 pt-24 pb-12 px-5 md:px-10 rounded-md shadow-md;
     }
 
     .section-title {

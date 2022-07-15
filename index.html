@@ -17,7 +17,7 @@
 </head>
 <body>
     <button id="arrow-up" class="fixed bottom-12 right-9 md:right-36 z-50 opacity-0 transition-all duration-300 pointer-events-none">
-        <i class="fa-solid fa-circle-up text-red-400 text-5xl"></i>
+        <i class="fa-solid fa-circle-up text-red-400 text-3xl md:text-5xl"></i>
     </button>
     <div class="container mx-auto flex flex-col gap-12 items-center text-slate-600 px-3 py-5 relative">
         <!-- Nav bar -->
@@ -47,7 +47,7 @@
                 <img src="./imgs/profile.jpg" alt="profile picture" class="w-72 h-72 rounded-full outline outline-4 outline-white">
                 <h1 class="text-5xl text-center font-bold leading-normal">Hello,<br />I'm Lark</h1>
                 <h2 class="text-2xl text-center font-semibold">A Software Engineer currently residing in Seoul, Korea</h2>
-                <a href="#contact" class="text-xl px-3 py-2 border-2 rounded-md hover:font-bold hover:border-3">CONTACT ME</a>
+                <a href="#contact" class="text-xl px-3 py-2 border-2 rounded-md hover:bg-orange-300">CONTACT ME</a>
             </div>
         </section>
         
@@ -55,7 +55,7 @@
         <section id="about" class="section bg-lime-200">
             <h2 class="section-title">About me</h2>
             <p class="section-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae voluptatibus nulla molestias iusto deserunt libero. Totam optio necessitatibus deleniti beatae, cupiditate molestias magnam repudiandae animi dolorum, maxime enim corrupti accusantium dolores ipsum asperiores iste nemo illo adipisci itaque excepturi. Ratione ea consectetur, dignissimos ipsam minima vero quae dicta a ut.</p>
-            <div class="flex flex-col md:flex-row gap-16 justify-between my-12 px-3">
+            <div class="flex flex-col md:flex-row gap-16 justify-between my-5 px-3">
                 <div class="max-w-xs flex flex-col gap-3 items-center">
                     <div class="w-48 h-48 border border-blue-300 flex items-center justify-center rounded-full group">
                         <i class="fa-brands fa-html5 text-8xl text-blue-400 group-hover:text-pink-300 group-hover:-rotate-[30deg] group-hover:scale-110 transition-transform"></i>
@@ -96,7 +96,7 @@
             <h3 class="section-subtitle">Skills & Attributes</h3>
             <p class="section-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque quod quia, est natus quo reprehenderit ducimus aspernatur tempora totam facilis, rem expedita similique esse praesentium?
             </p>
-            <div class="w-11/12 mx-auto grid grid-cols-5 grid-rows-3 mt-5">
+            <div class="w-11/12 mx-auto grid grid-cols-1 md:grid-cols-5 md:grid-rows-3 mt-5">
                 <div class="col-span-5 md:col-span-3 md:row-span-full bg-slate-800 text-white text-center px-9 py-5 space-y-7">
                     <h4 class="text-lg">Skills</h4>
                     <div class="flex flex-col justify-between gap-9">
@@ -185,23 +185,23 @@
             <p class="section-description">Projects</p>
             <ul class="projects-nav flex flex-col md:flex-row gap-1 justify-center px-1 w-full">
                 <li class="border border-gray-700 rounded-lg shadow-md">
-                    <button class="all button-active rounded-lg px-10 py-2 w-full hover:bg-red-300 hover:text-white group" data-category="all">
-                        All <span class="category-count text-white bg-yellow-300 w-7 h-7 rounded-full inline-flex items-center justify-center relative -top-5 left-2 opacity-0 group-hover:opacity-100 group-hover:top-0 transition-all duration-300">8</span>
+                    <button class="relative all button-active rounded-lg px-10 py-2 w-full hover:bg-red-300 hover:text-white group" data-category="all">
+                        All <span class="category-count text-white bg-yellow-300 w-7 h-7 rounded-full inline-flex items-center justify-center absolute -top-5 right-10 md:right-2 opacity-0 group-hover:opacity-100 group-hover:top-1 transition-all duration-300">8</span>
                     </button>
                 </li>
                 <li class="border border-gray-700 rounded-lg shadow-md">
-                    <button class="front-end px-10 py-2 rounded-lg w-full hover:bg-red-300 hover:text-white group" data-category="frontend">
-                        Front-end <span class="category-count text-white bg-yellow-300 w-7 h-7 rounded-full inline-flex items-center justify-center relative -top-5 left-2 opacity-0 group-hover:opacity-100 group-hover:top-0 transition-all duration-300">3</span>
+                    <button class="relative front-end px-10 py-2 rounded-lg w-full hover:bg-red-300 hover:text-white group" data-category="frontend">
+                        Front-end <span class="category-count text-white bg-yellow-300 w-7 h-7 rounded-full inline-flex items-center justify-center absolute -top-5 right-10 md:right-2 opacity-0 group-hover:opacity-100 group-hover:top-1 transition-all duration-300">3</span>
                     </button>
                 </li>
                 <li class="border border-gray-700 rounded-lg shadown-md">
-                    <button class="back-end px-10 py-2 rounded-lg w-full hover:bg-red-300 hover:text-white group" data-category="backend">
-                        Back-end <span class="category-count text-white bg-yellow-300 w-7 h-7 rounded-full inline-flex items-center justify-center relative -top-5 left-2 opacity-0 group-hover:opacity-100 group-hover:top-0 transition-all duration-300">3</span>
+                    <button class="relative back-end px-10 py-2 rounded-lg w-full hover:bg-red-300 hover:text-white group" data-category="backend">
+                        Back-end <span class="category-count text-white bg-yellow-300 w-7 h-7 rounded-full inline-flex items-center justify-center absolute -top-5 right-10 md:right-2 opacity-0 group-hover:opacity-100 group-hover:top-1 transition-all duration-300">3</span>
                     </button>
                 </li>
                 <li class="border border-gray-700 rounded-lg shadow-md">
-                    <button class="mobile px-10 py-2 rounded-lg w-full hover:bg-red-300 hover:text-white group" data-category="mobile">
-                        Mobile <span class="category-count text-white bg-yellow-300 w-7 h-7 rounded-full inline-flex items-center justify-center relative -top-5 left-2 opacity-0 group-hover:opacity-100 group-hover:top-0 transition-all duration-300">2</span>
+                    <button class="relative mobile px-10 py-2 rounded-lg w-full hover:bg-red-300 hover:text-white group" data-category="mobile">
+                        Mobile <span class="category-count text-white bg-yellow-300 w-7 h-7 rounded-full inline-flex items-center justify-center absolute -top-5 right-10 md:right-2 opacity-0 group-hover:opacity-100 group-hover:top-1 transition-all duration-300">2</span>
                     </button>
                 </li>
             </ul>
