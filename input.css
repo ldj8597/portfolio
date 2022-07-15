@@ -23,8 +23,17 @@
         @apply border border-white
     }
 
+    /* project-button */
     .button-active {
         @apply bg-red-300 text-white;
+    }
+
+    .project-tile {
+        @apply relative bg-slate-100 basis-1 md:basis-[24%] flex items-center justify-center h-64;
+    }
+
+    .animation-out {
+        @apply transition-all duration-300 opacity-0 scale-90 translate-y-20;
     }
 }
 

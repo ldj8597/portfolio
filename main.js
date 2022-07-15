@@ -7,6 +7,7 @@ hamburger.addEventListener('click', () => {
 
 // Make Nav bar transparent & highligted on scroll
 // Make home section transparent on scroll
+const navContainer = document.querySelector('.nav-container');
 const navbar = document.querySelector('nav');
 const sections = document.querySelectorAll('section');
 const navlinks = document.querySelectorAll('nav ul li');
@@ -16,15 +17,15 @@ window.addEventListener('scroll', () => {
     // Make nav bar transparent or opaque
     const navbarHeight = navbar.getBoundingClientRect().height; 
     if (window.scrollY > navbarHeight) {
-        navbar.classList.remove('bg-transparent');
-        navbar.classList.add('bg-red-300');
+        navContainer.classList.remove('bg-transparent');
+        navContainer.classList.add('bg-red-300');
         navbar.classList.remove('py-10');
         navbar.classList.add('py-3');
         hamburger.classList.remove('top-10');
         hamburger.classList.add('top-4');
     } else {
-        navbar.classList.remove('bg-red-300');
-        navbar.classList.add('bg-transparent');
+        navContainer.classList.remove('bg-red-300');
+        navContainer.classList.add('bg-transparent');
         navbar.classList.remove('py-3');
         navbar.classList.add('py-10');
         hamburger.classList.remove('top-4');
@@ -72,20 +73,31 @@ window.addEventListener('scroll', () => {
 });
 
 // Projects
+const projectContainer = document.querySelector('.projects');
 const projectButtons = document.querySelectorAll('.projects-nav button');
 const projects = document.querySelectorAll('.projects a');
 
 projectButtons.forEach(button => {
-    const category = button.dataset.category;
+    // const category = button.dataset.category;
     button.addEventListener('click', event => {
+        const category = event.currentTarget.dataset.category;
+        // fade out project container
+        projectContainer.classList.add('animation-out');
+        
+        // activate clicked button
         document.querySelector('.button-active').classList.remove('button-active');
         event.currentTarget.classList.add('button-active');
-        projects.forEach(project => {
-            if (category === 'all' || project.classList.contains(category)) {
-                project.classList.remove('hidden');
-            } else {
-                project.classList.add('hidden');
-            }
-        })
+
+        // filter projects & fade in project container
+        setTimeout(() => {
+            projects.forEach(project => {
+                if (category === 'all' || project.classList.contains(category)) {
+                    project.classList.remove('hidden');
+                } else {
+                    project.classList.add('hidden');
+                }
+            });
+            projectContainer.classList.remove('animation-out');
+        }, 300);
     });
 })
