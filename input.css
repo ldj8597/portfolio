@@ -35,6 +35,7 @@
     .animation-out {
         @apply transition-all duration-300 opacity-0 scale-90 translate-y-20;
     }
+
 }
 
 .button-active span {

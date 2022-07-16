@@ -7,12 +7,10 @@ hamburger.addEventListener('click', () => {
     nav.classList.toggle('bg-red-300');
 })
 
-// Make Nav bar transparent & highligted on scroll
+// Make Nav bar transparent 
 // Make home section transparent on scroll
 const navContainer = document.querySelector('.nav-container');
 const navbar = document.querySelector('nav');
-const sections = document.querySelectorAll('section');
-const navlinks = document.querySelectorAll('nav ul li');
 const home = document.querySelector('#home');
 
 window.addEventListener('scroll', () => {
@@ -33,25 +31,47 @@ window.addEventListener('scroll', () => {
         hamburger.classList.remove('top-4');
         hamburger.classList.add('top-10');
     }
-
-    // Highlight nav links on scroll
-    sections.forEach(section => {
-        const sectionTop = section.offsetTop;
-        const sectionBottom = sectionTop + section.offsetHeight;
-        const sectionId = section.getAttribute('id');
-        const menu = document.querySelector(`nav ul li.${sectionId}`);
-        if (window.scrollY > sectionTop && scrollY < sectionBottom) {
-            menu.classList.add('nav-active')
-        } else {
-            menu.classList.remove('nav-active');
-        }
-    });
-
+    
     // Make home section transparent on scroll
     if (window.scrollY > home.offsetTop && window.scrollY < (home.offsetTop + home.offsetHeight)) {
         document.querySelector('#home > div').style.opacity = 1 - window.scrollY / home.offsetHeight;
     }
 });
+
+
+// Make Nav link highligted on scroll
+let activeLink = null;
+const sections = document.querySelectorAll('.section');
+const option = {
+    root: null,
+    rootMargin: '0px',
+    threshold: [0.0, 0.1, 0.2, 0.3, 0.4, 0.5],
+};
+const callback = (entries) => {
+    entries.forEach(entry => {
+        const id = entry.target.getAttribute('id');
+        const link = document.querySelector(`nav ul li.${id}`);
+
+        if (entry.intersectionRatio <= 0 || activeLink === link) {
+            return;
+        }
+
+        if (entry.isIntersecting) {
+            if (!activeLink ||
+                entry.intersectionRect.height >= (window.innerHeight / 2) ||
+                entry.intersectionRatio >= 0.5) {
+                    activeLink?.classList.remove('nav-active');
+                    activeLink = link;
+                    link.classList.add('nav-active');
+                }
+        } 
+    });
+};
+const observer = new IntersectionObserver(callback, option);
+sections.forEach(section => {
+    observer.observe(section);
+})
+
 
 // Arrow up button
 const arrowup = document.querySelector('#arrow-up');
